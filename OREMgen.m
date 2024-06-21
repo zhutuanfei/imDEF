@@ -46,7 +46,7 @@ function syn = FocusOverSamp(sample,data_p,data_n,candidateDirection,distance)
          data = [data_p;data_n];
          if isempty(candidateDirection)
              syn = sample;
-             retubeta;
+             return;
          end
          ind = randsample(1:numel(candidateDirection),try_n,true);
          gap = rand(try_n,size(data,2)); 
